@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота 1</title>
+</head>
+<body>
+    <h1 id="top">Лабораторна робота 1</h1>
+    <p>Варіант 1</p>
+
+    <img src="images/logonure.png" alt="Зображення університету" width="240">
+
+    <h2>Зміст</h2>
+    <ul>
+        <li><a href="#text">Оформлений текст</a></li>
+        <li><a href="#structure">Структура університету</a></li>
+        <li><a href="#currency">Курс валют</a></li>
+        <li><a href="#vote">Голосування</a></li>
+    </ul>
+
+    <h2 id="text">Оформлений текст</h2>
+    <p>
+        Для будь-якого натурального числа <b>n &gt; 2</b><br>
+        рівняння <i>a<sup>n</sup> + b<sup>n</sup> = c<sup>n</sup></i>
+        <b>не має рішень</b> при<br>
+        цілих ненульових числах a,b,c.
+    </p>
+
+    <h2 id="structure">Структура університету</h2>
+    <p>Навчальний приклад структури університету.</p>
+
+    <ul>
+        <li>Університет
+            <ul>
+                <li>1 Факультет комп'ютерних наук
+                    <ul>
+                        <li>Кафедра програмної інженерії</li>
+                        <li>Кафедра інформаційних систем</li>
+                    </ul>
+                </li>
+                <li>Факультет інформаційних технологій
+                    <ul>
+                        <li>Кафедра комп'ютерних мереж</li>
+                        <li>Кафедра кібербезпеки</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2 id="currency">Курс валют</h2>
+    <p>Умовні курси, гривень за одиницю валюти.</p>
+
+    <table>
+        <caption>Купівля та продаж валют</caption>
+        <tr>
+            <th>Валюта</th>
+            <th>Купівля</th>
+            <th>Продаж</th>
+        </tr>
+        <tr>
+            <td>USD</td>
+            <td>41,00</td>
+            <td>41,50</td>
+        </tr>
+        <tr>
+            <td>EUR</td>
+            <td>45,00</td>
+            <td>45,60</td>
+        </tr>
+        <tr>
+            <td>PLN</td>
+            <td>10,50</td>
+            <td>10,90</td>
+        </tr>
+    </table>
+
+    <h2 id="vote">Голосування</h2>
+
+    <form action="index.html#vote" method="get">
+        <fieldset>
+            <legend>Який напрям навчання вам подобається?</legend>
+
+            <p>
+                <label>
+                    <input type="radio" name="direction"
+                           value="programming" required>
+                    Програмування
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input type="radio" name="direction"
+                           value="networks">
+                    Комп'ютерні мережі
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input type="radio" name="direction"
+                           value="security">
+                    Кібербезпека
+                </label>
+            </p>
+
+            <button type="submit">Проголосувати</button>
+            <button type="reset">Очистити</button>
+        </fieldset>
+    </form>
+
+    <p>Навчальна форма: відповідь передається в URL, але не зберігається.</p>
+
+    <p><a href="#top">На початок сторінки</a></p>
+</body>
+</html>
